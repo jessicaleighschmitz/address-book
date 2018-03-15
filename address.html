@@ -19,16 +19,19 @@
         <div class="col-md-6">
           <h2>Add a contact:</h2>
           <form id="new-contact">
-            <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
+            <div class="border">
+              <div class="form-group">
+                <label for="new-first-name">First name</label>
+                <input type="text" class="form-control" id="new-first-name">
+              </div>
+              <div class="form-group">
+                <label for="new-last-name">Last name</label>
+                <input type="text" class="form-control" id="new-last-name">
+              </div>
             </div>
 
             <div id="new-addresses">
+              <h3>Main Address:</h3>
               <div class="new-address">
                 <div class="form-group">
                   <label for="new-street">Street</label>
@@ -42,7 +45,15 @@
                   <label for="new-state">State</label>
                   <input type="text" class="form-control new-state">
                 </div>
+                <div id="select-box">
+                  <select class="form-control" class="address-type">
+                    <option value="main">Main</option>
+                    <option value="secondary">Secondary</option>
+                    <option value="work">Work</option>
+                  </select>
+                </div>
               </div>
+
             </div>
 
              <span class="btn btn-primary" id="add-address">Another address</span>
@@ -65,7 +76,7 @@
               Adresses:
             </p>
             <ul id="addresses">
-              
+
             </ul>
           </div>
         </div>

@@ -10,3 +10,6 @@
 .contact:hover {
   text-decoration: underline;
 }
+.border {
+  border-bottom: 2px solid #000;
+}
